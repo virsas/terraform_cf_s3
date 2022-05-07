@@ -2,7 +2,7 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_cloudfront_distribution" "www_s3" {
+resource "aws_cloudfront_distribution" "cf" {
   origin {
     domain_name = var.s3
     origin_id   = var.settings.domain
