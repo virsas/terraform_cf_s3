@@ -1,6 +1,6 @@
 output "endpoint" {
-  value = aws_cloudfront_distribution.www_s3.domain_name
+  value = aws_cloudfront_distribution.cf.domain_name
 }
 output "zone" {
-  value = aws_cloudfront_distribution.www_s3.hosted_zone_id
+  value = aws_cloudfront_distribution.cf.hosted_zone_id
 }
